@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">    
+</head>
+<body>
+    <h1>Blockchain</h1>
+
+    <h2>Crear nuevo bloque</h2>
+    <div class="bloque_nuevo">
+        <form action="/add_block" method="post">
+            Número de transacciones: <input type="number" name="num_transacciones" min="1" required>
+            <button type="submit">Crear</button>
+        </form>
+    </div>
+
+    <h2>Cadena de bloques</h2>
+    {% for bloque in chain %}
+        <div class="bloque">
+            <h3>Bloque {{ loop.index }}</h3>
+            <p><strong>Hash:</strong> {{ bloque.hash }}</p>
+            <p><strong>Hash anterior:</strong> {{ bloque.hash_anterior }}</p>
+            <p><strong>Marca de tiempo:</strong> {{ bloque.marca_de_tiempo }}</p>
+            <p><strong>Nonce:</strong> {{ bloque.nonce }}</p>
+            <p><strong>Merkle Root:</strong> {{ bloque.merkle_root }}</p>
+            <p><strong>Transacciones:</strong></p>
+            <ul>
+                {% for tx in bloque.l_transacciones %}
+                    <li>{{ tx }}</li>
+                {% endfor %}
+            </ul>
+
+            <p><strong>Árbol de Merkle:</strong></p>
+            <ul>
+            {% for nivel in bloque.merkle_niveles|reverse %}
+            <li>Nivel {{ loop.index0 }} (desde la raíz) </li>
+                <ul>
+                {% for hash in nivel %}
+                <li>{{ hash }}</li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+            </ul>
+
+        </div>
+    {% endfor %}
+</body>
+</html>
