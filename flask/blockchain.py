@@ -50,10 +50,6 @@ class MerkleTree:
         # Guardamos los niveles del árbol de Merkle
         niveles = [hojas]
 
-        # Si sólo guardamos una transacción en el bloque, calculamos un único hash
-        #if len(hojas) == 1:
-        #    return hojas[0], niveles
-
         # Si son más transacciones, calculamos los hash de cada una de ellas y construimos el árbol
         # Construimos el árbol, de abajo a arriba
         # Acordaos de lo que habéis visto en EDA

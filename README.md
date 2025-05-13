@@ -173,6 +173,15 @@ Los mecanismos de consenso permiten validar las transacciones y asegurar la red.
 - [Blockchain en Flask](flask/): Ejemplo de una blockchain básica implementada
   en Python y Flask.
 
+![](images/flask_00.png)
+Imagen 4. Página con el bloque génesis de la blockchain.
+
+![](images/flask_01.png)
+Imagen 5. Formulario para añadir transacciones a un bloque.
+
+![](images/flask_02.png)
+Imagen 6. Página con la blockchain actualizada con el nuevo bloque.
+
 ## 10. Créditos
 
 El código utilizado en este seminario está basado en el código desarrollado por
