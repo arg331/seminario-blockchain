@@ -141,19 +141,20 @@ hashes para verificar que una transacción está incluida en el árbol.
 
 **Ejemplo:**
 
+En este ejemplo para verificar que la transacción H(K) está incluida en el árbol
+sólo serían necesarios los hashes:
+
+- `H(L)`
+- `H(IJ)`
+- `H(MNOP)`
+- `H(ABCDEFGH)`
+
+El árbol de Merkle de este ejemplo tiene 16 nodos hojas (transacciones), por lo
+tanto, el número de hashes que necesitamos para verificar que la transacción
+`H(K)` está incluida en el árbol es: log2(16) = 4.
+
 ![](images/merkle_tree_proof.png)
 Imagen 3: Árbol de Merkle. Imagen obtenida de [Medium](https://medium.com/crypto-0-nite/merkle-proofs-explained-6dd429623dc5).
-
-En este ejemplo para verificar que la transacción H(K) está incluida en el árbol sólo serían necesarios los hashes:
-
-- H(L)
-- H(IJ)
-- H(MNOP)
-- H(ABCDEFGH)
-
-En este ejemplo tenemos 16 nodos hojas (transacciones), por lo tanto, el número
-de hashes que necesitamos para verificar que la transacción H(K) está incluida
-en el árbol es: log2(16) = 4.
 
 _Referencias:_
 
