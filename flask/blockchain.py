@@ -90,7 +90,7 @@ class Bloque:
         self.l_transacciones = l_transacciones
         self.merkle_tree = MerkleTree(l_transacciones)
         self.merkle_root = self.merkle_tree.root
-        self.merkle_niveles = self.merkle_tree.niveles  # Guarda todos los niveles del árbol
+        self.merkle_niveles = self.merkle_tree.niveles  # Guardamos todos los niveles del árbol
         self.nonce = 0
         self.hash = self.proof_of_work() # El cálculo de hash válido es necesario, pero no sería necesario almacenarlo
 
@@ -170,44 +170,3 @@ class Blockchain:
 
     def __str__(self) -> str:
         return "\n".join([str(bloque) for bloque in self.chain])
-
-"""
-# Programa principal
-def main():
-    blockchain = Blockchain()
-
-    while True:
-        print("\n=== Añadir nuevo bloque ===")
-        while True:
-                try:
-                    num_transacciones = abs(int(input("Número de transacciones en el bloque: ")))
-                    break
-                except ValueError:
-
-        print(f"Se generarán {num_transacciones} transacciones para este bloque.")
-
-        l_transacciones = []
-        for i in range(num_transacciones):
-            print(f"\nTransacción {i + 1}:")
-            pagador = input("Remitente: ")
-            receptor = input("Destinatario: ")
-            while True:
-                try:
-                    cantidad = float(input("Cantidad: "))
-                    break
-                except ValueError:
-                    print("Por favor, introduce un número válido.")
-
-            l_transacciones.append(Transaccion(pagador, receptor, cantidad))
-
-        blockchain.append_bloque(l_transacciones)
-        print("\n=== Blockchain Actualizada ===")
-        print(blockchain)
-
-        eleccion = input("\n¿Desea añadir otro bloque? (s/n): ").lower()
-        if eleccion != 's':
-            break
-
-if __name__ == "__main__":
-    main()
-"""

@@ -13,8 +13,8 @@ de la asignatura de [Negocio Electrónico][1].
 - [6. Simuladores de Blockchain](#6-simuladores-de-blockchain)
 - [7. Vídeos](#7-vídeos)
 - [8. Referencias](#8-referencias)
-- [9. Créditos](#9-créditos)
-
+- [9. Ejemplos](#9-ejemplos)
+- [10. Créditos](#10-créditos)
 
 ## 1. ¿Qué es una Blockchain?
 
@@ -162,10 +162,18 @@ Los mecanismos de consenso permiten validar las transacciones y asegurar la red.
 ## 8. Referencias
 
 - [¿Qué es el Blockchain?](https://www.ibm.com/es-es/topics/blockchain). IBM.
-- [Blockchain: La revolución industrial en Interner](https://libroblockchain.com/). Alex Preukschat. Gestión 2000.
+- [Blockchain: La revolución industrial en Internet](https://libroblockchain.com/). Alex Preukschat. Gestión 2000.
 - [Bitcoin: Un Sistema de Efectivo Electrónico Usuario-a-Usuario](https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf). Satoshi Nakamoto.
+- [Seminario Flask](https://github.com/josejuansanchez/seminario-flask).
 
-## 9. Créditos
+## 9. Ejemplos
+
+- [Blockchain en Google Colab](notebook/blockchain.ipynb): Ejemplo de una
+  blockchain básica implementada en Python en un notebook de Google Colab.
+- [Blockchain en Flask](flask/): Ejemplo de una blockchain básica implementada
+  en Python y Flask.
+
+## 10. Créditos
 
 El código utilizado en este seminario está basado en el código desarrollado por
 [José Antonio Torres Ariaza](https://www.ual.es/persona/535053495455545772).
