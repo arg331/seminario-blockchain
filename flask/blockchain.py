@@ -90,7 +90,7 @@ class Bloque:
         self.l_transacciones = l_transacciones
         self.merkle_tree = MerkleTree(l_transacciones)
         self.merkle_root = self.merkle_tree.root
-        self.merkle_niveles = self.merkle_tree.niveles  # Guardar todos los niveles del árbol
+        self.merkle_niveles = self.merkle_tree.niveles  # Guarda todos los niveles del árbol
         self.nonce = 0
         self.hash = self.proof_of_work() # El cálculo de hash válido es necesario, pero no sería necesario almacenarlo
 
