@@ -1,7 +1,7 @@
 # Introducción a Blockchain
 
-Este repositorio contiene los ejemplos utilizados en el seminario de Blockchain
-de la asignatura de [Negocio Electrónico][1].
+Este repositorio contiene los ejemplos utilizados en el seminario de
+introducción a Blockchain de la asignatura de [Negocio Electrónico][1].
 
 ## Índice de contenidos
 
