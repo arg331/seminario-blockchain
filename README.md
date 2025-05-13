@@ -5,15 +5,15 @@ de la asignatura de [Negocio Electrónico][1].
 
 ## Índice de contenidos
 
-- [1. ¿Qué es una Blockchain?](#qué-es-una-blockchain)
-- [2. Bloque](#bloque)
-- [3. Transacciones](#transacciones)
-- [4. Árbol de Merkle](#árbol-de-merkle)   
-- [5. Mecanismos de Consenso](#mecanismos-de-consenso)
-- [6. Simuladores de Blockchain](#simuladores-de-blockchain)
-- [7. Vídeos](#vídeos)
-- [8. Referencias](#referencias)
-- [9. Créditos](#créditos)
+- [1. ¿Qué es una Blockchain?](#1-qué-es-una-blockchain)
+- [2. Bloque](#2-bloque)
+- [3. Transacciones](#3-transacciones)
+- [4. Árbol de Merkle](#4-árbol-de-merkle)   
+- [5. Mecanismos de Consenso](#5-mecanismos-de-consenso)
+- [6. Simuladores de Blockchain](#6-simuladores-de-blockchain)
+- [7. Vídeos](#7-vídeos)
+- [8. Referencias](#8-referencias)
+- [9. Créditos](#9-créditos)
 
 
 ## 1. ¿Qué es una Blockchain?
