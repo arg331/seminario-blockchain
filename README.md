@@ -213,10 +213,17 @@ blockchain.
 
 ## 10. Ejemplos
 
+### Google Colab
+
 - [Blockchain en Google Colab](notebook/blockchain.ipynb): Ejemplo de una
   blockchain básica implementada en Python en un notebook de Google Colab.
+
+### Flask
+
 - [Blockchain en Flask](flask/): Ejemplo de una blockchain básica implementada
   en Python y Flask.
+
+**Capturas de pantalla**
 
 ![](images/flask_00.png)
 Imagen 4. Página con el bloque génesis de la blockchain.
