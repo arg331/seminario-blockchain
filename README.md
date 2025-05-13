@@ -15,7 +15,8 @@ de la asignatura de [Negocio Electrónico][1].
 - [8. Vídeos](#8-vídeos)
 - [9. Referencias](#9-referencias)
 - [10. Ejemplos](#10-ejemplos)
-- [11. Créditos](#11-créditos)
+- [11. Capturas del proyecto en Flask](#11-capturas-del-proyecto-en-flask)
+- [12. Créditos](#11-créditos)
 
 ## 1. ¿Qué es una Blockchain?
 
@@ -213,17 +214,15 @@ blockchain.
 
 ## 10. Ejemplos
 
-### Google Colab
-
 - [Blockchain en Google Colab](notebook/blockchain.ipynb): Ejemplo de una
   blockchain básica implementada en Python en un notebook de Google Colab.
-
-### Flask
-
 - [Blockchain en Flask](flask/): Ejemplo de una blockchain básica implementada
   en Python y Flask.
 
-**Capturas de pantalla**
+## 11. Capturas del proyecto en Flask
+
+A continuación, se muestran algunas capturas de cómo se vería la blockchain del
+ejemplo basado en Flask.
 
 ![](images/flask_00.png)
 Imagen 4. Página con el bloque génesis de la blockchain.
@@ -234,7 +233,7 @@ Imagen 5. Formulario para añadir transacciones a un bloque.
 ![](images/flask_02.png)
 Imagen 6. Página con la blockchain actualizada con el nuevo bloque.
 
-## 11. Créditos
+## 12. Créditos
 
 El código utilizado en este seminario está basado en el código desarrollado por
 [José Antonio Torres Ariaza](https://www.ual.es/persona/535053495455545772).
