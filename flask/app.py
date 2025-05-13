@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, redirect, session
 from blockchain import Blockchain, Transaccion
+import os
 
 app = Flask(__name__)
-#app.secret_key = 'clavesecreta'
-
-import os
 app.secret_key = os.urandom(24)
 
 # Instancia global de la blockchain
