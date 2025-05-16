@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">    
 </head>
 <body>
+    <button id ="modoOscuroBtn" onclick="toggleModoOscuro()">🔮</button>
     <h1>Blockchain</h1>
 
     <h2>Crear nuevo bloque</h2>
@@ -15,7 +16,8 @@
         </form>
     </div>
 
-    <h2>Cadena de bloques</h2>
+  <h2>Cadena de bloques</h2>
+<div class="bloques-container">
     {% for bloque in chain %}
         <div class="bloque">
             <h3>Bloque {{ loop.index }}</h3>
@@ -42,8 +44,15 @@
                 </ul>
             {% endfor %}
             </ul>
-
         </div>
     {% endfor %}
+</div>
+
+        <script>    
+            function toggleModoOscuro(){
+                document.body.classList.toggle('modo-oscuro');
+            }
+        </script>
+    
 </body>
 </html>

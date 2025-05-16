@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #010101;
 }
 
 .bloque_nuevo {
@@ -10,7 +10,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: #e8e8e8;
-    font-family: "Courier New", Courier, monospace;
+        font-family: "Courier New", Courier, monospace;
 }
 
 .bloque {
@@ -21,6 +21,22 @@ body {
     background-color: #f8f8f8;
     font-family: "Courier New", Courier, monospace;
 }
+.bloques-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los bloques salten a la línea siguiente si no caben */
+    gap: 20px; /* Espacio entre bloques */
+    padding: 20px;
+}
+
+.bloque {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 700px; /* Puedes ajustar esto */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 
 button {
     display: inline-block;
@@ -38,4 +54,21 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+body.modo-oscuro {
+    background-color: #111;
+    color: white;
+}
+
+body.modo-oscuro .bloque,
+body.modo-oscuro .bloque_nuevo {
+    background-color: #222;
+    border-color: #444;
+    color: white;
+}
+
+body.modo-oscuro input,
+body.modo-oscuro button {
+    background-color: #444;
+    color: white;
 }
